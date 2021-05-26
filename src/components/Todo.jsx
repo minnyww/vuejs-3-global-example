@@ -41,6 +41,7 @@ export default defineComponent({
             {JSON.stringify(this.todoLists)}
             <br />
             <span>count from global : {countStore1.count}</span>
+            <button onClick={() => countStore1.fetch()}>fetch</button>
             <button
                onClick={() => {
                   countStore1.increment();
